@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Electron</title>
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css" integrity="sha512-EJp8vMVhYl7tBFE2rgNGb//drnr1+6XKMvTyamMS34YwOEFohhWkGq13tPWnK0FbjSS6D8YoA3n3bZmb3KiUYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+  </head>
+  <style>
+    body{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    main{
+      width: 100%;
+    height: 100vh;
+    background-color: rgb(20, 20, 20);
+    box-sizing: border-box;
+   }
+   section {
+    padding-top: 10px;
+      display:flex; 
+      flex-wrap:wrap; 
+      width: 100%;
+      height: 89%;
+    }
+  form{
+    margin: 0;
+    padding-top:10px ;
+  }
+    #url-input{
+      width:300px; 
+      height: 100%;
+      margin: 0 10px;
+      padding: 5px 10px;
+      background-color: gray;
+      color: aliceblue;
+      font-weight: 600;
+      font-size: 1rem;
+     border: none;
+     border-radius: 20px;
+     box-sizing: border-box;
+    }
+    #button-container{
+      display: flex;
+      align-items: center;
+    }
+    button{
+    margin:0 5px;
+    padding: 10px 15px;
+    color: aliceblue;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+  }
+  button:hover{
+    background-color: rgb(61, 60, 60);
+  }
+  #go:hover{
+  background-color: rgb(3, 177, 3);
+  }
+  #search-button{
+    padding: 0;
+    border-radius: 100%;
+  }
+  button >img{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    padding: 0;
+    margin: 0;
+  }
+    #foo{
+      width: 100%;
+      height: 100%;
+      margin-top: 10px;
+      object-fit: contain;
+      background-color: rgb(43, 41, 41);
+     
+    }
+  
+  
+  </style>
+<body>
+  <!----
+  <div id="app">
+    <img alt="logo" class="logo" src="./assets/electron.svg" />
+    <div class="creator">Powered by electron-vite</div>
+    <div class="text">
+      Build an Electron app with
+      <span class="js">JavaScript</span>
+    </div>
+    <p class="tip">Please try pressing <code>F12</code> to open the devTool</p>
+    <div class="actions">
+      <div class="action">
+        <a href="https://electron-vite.org/" target="_blank" rel="noreferrer">Documentation</a>
+      </div>
+      <div class="action">
+        <a id="ipcHandler" target="_blank" rel="noreferrer">Send IPC</a>
+      </div>
+    </div>
+
+    <ul class="versions">
+      <li class="electron-version"></li>
+      <li class="chrome-version"></li>
+      <li class="node-version"></li>
+    </ul>
+  </div>-->
+
+  <main style="display: flex;
+   justify-content: center; width:100%; margin: 0;padding: 0;">
+    
+
+    <section>
+      <div id="browser-tools">
+        <div id="button-container">
+          <button id="back-button">&larr;</button>
+          <button id="forward-button">&rarr;</button>
+          <button id="reload-button">&#x21bb;</button>
+          <button id="search-button"><img src="./assets/google.svg" alt=""></button>
+          <button id="new-window-button">+</button>
+        </div>
+      </div>
+      <form action="">
+        <input id="url-input" 
+        value=""
+        required> 
+      </form> <button id="go">go</button>
+      <webview id="foo" src="https://www.duckduckgo.com"></webview>
+    </section>
+  </main>
+  <script type="module" src="./src/renderer.js"></script>
+</body>
+
+</html>
