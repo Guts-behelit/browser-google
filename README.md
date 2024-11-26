@@ -1,5 +1,5 @@
 
-# YouTube Video Player in ReactJS
+# Browser ElectronJS
 
 Este proyecto es un Browser construido con **ElectronJS**. Permite a los usuarios buscar, ver y controlar eh ingresar a sus sitios web favoritos directamente desde la interfaz de la aplicación.tiene como buscador predeterminado Duckduckgo  para proporcionar una experiencia fluida y moderna sin rastreadores de anuncios.
 
