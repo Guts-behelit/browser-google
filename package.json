@@ -1,9 +1,9 @@
 {
   "name": "google",
   "version": "1.0.0",
-  "description": "A minimal Electron application with JavaScript",
+  "description": "Browser con capacidades basicas de chrome",
   "main": "./out/main/index.js",
-  "author": "example.com",
+  "author": "Joshua Developer <joshuadeveloper12@gmail.com>",
   "homepage": "https://electron-vite.org",
   "scripts": {
     "format": "prettier --write .",
@@ -30,5 +30,22 @@
     "eslint": "^8.57.0",
     "prettier": "^3.3.2",
     "vite": "^5.3.1"
+  },
+  "build": {
+    "appId": "com.picachuBrowser.app",
+    "productName": "Picachu Browser",
+    "linux": {
+      "target": [
+        "deb"
+      ],
+      "category": "Utility",
+      "icon": "resources/picachu.png"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    }
   }
 }
