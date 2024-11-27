@@ -4,8 +4,8 @@
 Este proyecto es un Browser construido con **ElectronJS**. Permite a los usuarios buscar, ver y controlar eh ingresar a sus sitios web favoritos directamente desde la interfaz de la aplicación.tiene como buscador predeterminado Duckduckgo  para proporcionar una experiencia fluida y moderna sin rastreadores de anuncios.
 
 ![YouTube Player](./capture/browser-google.png)
-## Url para descargar el software
-[wolfbyte-browser.vercel.app](https://wolfbyte-browser.vercel.app)
+
+
 ## Preview del proyecto
 
 ![Texto alternativo](./capture/screen-capture.gif)
@@ -21,7 +21,7 @@ Este proyecto es un Browser construido con **ElectronJS**. Permite a los usuario
 
 ## App
 
-Si deseas descargar la aplicacion **Completa** puesde hacerlo ingresando aqui , y seleccionas tu sistema operativo favorito [https://youvideo.vercel.app/].
+Si deseas descargar la aplicacion **Completa** puesde hacerlo ingresando aqui , y seleccionas tu sistema operativo favorito [wolfbyte-browser.vercel.app](https://wolfbyte-browser.vercel.app)
 
 ## Requisitos
 
